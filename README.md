@@ -26,31 +26,74 @@ OpenResty 是一个基于 Nginx 与 Lua 的高性能 Web 平台，其内部集�
 ```
 .
 ├── src
-│   ├── bin (shell启停脚本)
-│   ├── config (ngx配置文件)
-│   │   └── domains
-│   ├── js (前端项目)
+│   ├── bin(shell启停脚本)
+│   │   ├── start.sh
+│   │   └── stop.sh
+│   ├── config(ngx配置文件)
+│   │   ├── domains
+│   │   │   └── www.vue.com.conf
+│   │   ├── mime.types
+│   │   ├── nginx.conf
+│   │   └── resources.properties
+│   ├── js(前端项目)
+│   │   ├── .babelrc
 │   │   ├── less
-│   │   └── src
-│   │       ├── module
-│   │       ├── utils
-│   │       └── views
-│   ├── lua (lua代码)
-│   │   └── lib
-│   │       └── nxiao
-│   ├── php (php代码)
+│   │   │   ├── index.less
+│   │   │   └── main.less
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── index.js
+│   │   │   ├── main.js
+│   │   │   ├── module
+│   │   │   │   └── user.js
+│   │   │   ├── play.js
+│   │   │   ├── utils
+│   │   │   │   ├── observe.js
+│   │   │   │   ├── template.js
+│   │   │   │   └── utils.js
+│   │   │   ├── views
+│   │   │   │   ├── index.vue
+│   │   │   │   └── main.vue
+│   │   │   └── virtual.js
+│   │   └── webpack.config.js
+│   ├── lua(lua代码)
+│   │   ├── dyna_balancer.lua
+│   │   ├── dyna_upstreams.lua
+│   │   ├── init.lua
+│   │   ├── lib
+│   │   │   └── nxiao
+│   │   │       └── product_data.lua
+│   │   ├── product_controller.lua
+│   │   └── upstream_controller.lua
+│   ├── php(php代码)
 │   │   ├── config
 │   │   └── lib
 │   └── template
+│       └── prodoct.html
 └── www (web访问目录)
     ├── css
+    │   └── index.min.css
+    ├── favicon.ico
     ├── images
+    │   └── sicons.png
+    ├── index.html
+    ├── index.php
+    ├── main.html
     ├── media
-    └── script
-        └── libs
-```
+    │   └── 1fb433aa2aee9b7ad3d3957b582787de.f4v
+    ├── play.html
+    ├── script
+    │   ├── index.min.js
+    │   ├── libs
+    │   │   └── commons.min.js
+    │   ├── main.min.js
+    │   ├── play.min.js
+    │   └── virtual.min.js
+    └── virtual.html
 
-> 用法
+## 注意
+
+因为每个人项目目录不同请修改src/config进行正确配置
 
 ## 启动项目
 ```
@@ -72,3 +115,6 @@ sudo npm install
 cd src/js
 sudo webpack -p
 ```
+## 备注
+
+本人会不断更具研究项目进行更新(363305175)。
