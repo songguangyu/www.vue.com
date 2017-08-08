@@ -1,0 +1,25 @@
+{
+    "remotePath": "/opt/www/www.vue.com/",
+    "host": "192.168.204.61",
+    "username": "ningxiao",
+    "password": "nx4276",
+    "port": 22,
+    "secure": false,
+    "protocol": "sftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store",
+        "\\src\\js\\node_modules"
+    ],
+    "generatedFiles": {
+        "uploadOnSave": true,
+        "extensionsToInclude": [],
+        "path": ""
+    }
+}

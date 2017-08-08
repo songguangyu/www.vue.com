@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>VUE练习</title>
+    <script src="/script/libs/commons.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <index/>
+    </div>
+    <div id="vuex">
+    </div>
+    <div id="example">
+        <ul>
+            <li v-for="tab in tabs">
+                {{tab.text | uppercase}}
+            </li>
+        </ul>
+    </div>
+    <script src="/script/index.min.js"></script>
+</body>
+
+</html>
