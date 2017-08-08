@@ -62,6 +62,11 @@ sudo ./start.sh
 cd src/bin
 sudo ./stop.sh
 ```
+## 安装webpack
+```
+cd src/js
+sudo npm install
+```
 ## webpack压缩项目
 ```
 cd src/js
