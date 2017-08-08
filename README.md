@@ -90,7 +90,7 @@ OpenResty 是一个基于 Nginx 与 Lua 的高性能 Web 平台，其内部集�
     │   ├── play.min.js
     │   └── virtual.min.js
     └── virtual.html
-
+```
 ## 注意
 
 因为每个人项目目录不同请修改src/config进行正确配置
