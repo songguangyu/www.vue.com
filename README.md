@@ -1,8 +1,6 @@
-[中文](https://github.com/ningxiao/www.vue.com)
-
 ## 简介
 
-该案例搭建lua结合nginx(OpenResty)开发动态服务端
+该案例主要实现lua结合nginx(OpenResty)结合开发动态服务端
 
 ## 特点
 
