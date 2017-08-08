@@ -26,8 +26,8 @@ OpenResty 是一个基于 Nginx 与 Lua 的高性能 Web 平台，其内部集�
 
 ## 目录结构
 .
-├── src
-│   ├── bin (shell启停脚本)
+├── src<br>
+│<br>├── bin (shell启停脚本)<br>
 │   ├── config (ngx配置文件)
 │   │   └── domains
 │   ├── js (前端项目)
